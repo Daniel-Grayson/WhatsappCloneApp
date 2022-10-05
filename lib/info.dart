@@ -1,6 +1,6 @@
 const info = [
   {
-    'name': 'Blossom',
+    'name': 'Linda Blossom',
     'message': 'Hey, how are you doing?',
     'time': '3:53',
     'profilePic':
@@ -11,14 +11,14 @@ const info = [
     'message': 'Hello, whats up',
     'time': '2:25',
     'profilePic':
-        'https://www.socialketchup.in/wp-content/uploads/2020/05/fi-vill-JOHN-DOE.jpg',
+        'https://upload.wikimedia.org/wikipedia/commons/4/41/Sunflower_from_Silesia2.jpg',
   },
   {
-    'name': 'Destiny',
+    'name': 'Destiny Obahiagbon',
     'message': 'Boss, afar?',
     'time': '1:03',
     'profilePic':
-        'https://media.cntraveler.com/photos/60596b398f4452dac88c59f8/16:9/w_3999,h_2249,c_limit/MtFuji-GettyImages-959111140.jpg',
+        'https://cdn.pixabay.com/photo/2021/04/05/12/39/man-6153298_960_720.jpg',
   },
   {
     'name': 'Sir',
@@ -49,7 +49,7 @@ const info = [
         'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
   },
   {
-    'name': 'Graham, G3',
+    'name': 'Graham Orji',
     'message': 'I am from International Olym...',
     'time': '6:02',
     'profilePic':
