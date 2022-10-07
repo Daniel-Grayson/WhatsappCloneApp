@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone_app/colors.dart';
 
@@ -7,7 +9,7 @@ class WebSearchBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * 0.06,
+      height: MediaQuery.of(context).size.height * 0.08,
       width: MediaQuery.of(context).size.width * 0.25,
       padding: const EdgeInsets.all(10),
       decoration: const BoxDecoration(
@@ -15,17 +17,18 @@ class WebSearchBar extends StatelessWidget {
       ),
       child: TextField(
         decoration: InputDecoration(
+            hoverColor: Colors.grey[800],
             filled: true,
             fillColor: searchBarColor,
             prefixIcon: const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: Icon(
                 Icons.search_rounded,
-                size: 25,
+                size: 20,
               ),
             ),
-            hintStyle: const TextStyle(fontSize: 13),
-            hintText: "Search or start new a conversation",
+            hintStyle: const TextStyle(fontSize: 14),
+            hintText: "Search or start new chat",
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(20),
               borderSide: const BorderSide(

@@ -13,12 +13,13 @@ class WebProfileBar extends StatelessWidget {
         width: MediaQuery.of(context).size.width * 0.25,
         padding: const EdgeInsets.all(10),
         decoration: const BoxDecoration(
+          color: webAppBarColor,
           border: Border(
             right: BorderSide(
+              width: 1.0,
               color: dividerColor,
             ),
           ),
-          color: webAppBarColor,
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
