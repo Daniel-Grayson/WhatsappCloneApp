@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/chat_app_bar.dart';
+import '../widgets/chat_list.dart';
 import '../widgets/contact_list.dart';
 import '../widgets/web _search_bar.dart';
-import '../widgets/web_profile_ bar.dart';
+import '../widgets/web_profile_bar.dart';
 
 class WebScreenLayout extends StatelessWidget {
   const WebScreenLayout({Key? key}) : super(key: key);
@@ -33,7 +34,7 @@ class WebScreenLayout extends StatelessWidget {
             child: Column(
               children: const [
                 ChatAppBar(),
-                // Chat List
+                ChatList(),
                 // Message Input Box
               ],
             )),
