@@ -11,7 +11,11 @@ class WebSearchBar extends StatelessWidget {
       width: MediaQuery.of(context).size.width * 0.25,
       padding: const EdgeInsets.all(10),
       decoration: const BoxDecoration(
-        border: Border(bottom: BorderSide(color: dividerColor)),
+        border: Border(
+          bottom: BorderSide(
+            color: dividerColor,
+          ),
+        ),
       ),
       child: TextField(
         decoration: InputDecoration(

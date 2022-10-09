@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../colors.dart';
 
-class MessageInputBox extends StatelessWidget {
-  const MessageInputBox({Key? key}) : super(key: key);
+class MessageInputBoxMobile extends StatelessWidget {
+  const MessageInputBoxMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
         height: MediaQuery.of(context).size.height * 0.08,
-        width: MediaQuery.of(context).size.width * 0.75,
+        width: MediaQuery.of(context).size.width * 0.999,
         padding: const EdgeInsets.all(10),
         decoration: const BoxDecoration(
           border: Border(

@@ -50,11 +50,11 @@ class SenderMessageCard extends StatelessWidget {
                       const SizedBox(
                         width: 5,
                       ),
-                      const Icon(
-                        Icons.done_all_rounded,
-                        size: 20,
-                        color: Colors.blue,
-                      ),
+                      // const Icon(
+                      //   Icons.done_all_rounded,
+                      //   size: 20,
+                      //   color: Colors.blue,
+                      // ),
                     ],
                   ),
                 )

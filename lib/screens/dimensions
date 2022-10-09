@@ -1,5 +1,5 @@
 // dimensions for both mobile and Web view
 
 const mobileView < 600;
-const desktopView > 768;
+const desktopView > 600;
 
