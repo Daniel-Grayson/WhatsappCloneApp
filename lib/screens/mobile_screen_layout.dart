@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../colors.dart';
 import '../widgets/contact_list.dart';
+import '../widgets/mobile_calls_list.dart';
+import '../widgets/mobile_status_list.dart';
 
 class MobileScreenLayout extends StatelessWidget {
   const MobileScreenLayout({Key? key}) : super(key: key);
@@ -26,11 +28,13 @@ class MobileScreenLayout extends StatelessWidget {
                         const Icon(Icons.more_vert_rounded, color: Colors.grey))
               ],
               bottom: const TabBar(
+                // onTap: () {},
                 indicatorColor: tabColor,
                 indicatorWeight: 4,
                 labelColor: tabColor,
                 unselectedLabelColor: Colors.grey,
                 labelStyle: TextStyle(fontWeight: FontWeight.bold),
+
                 tabs: [
                   Tab(
                     text: ("CHATS"),
@@ -44,14 +48,18 @@ class MobileScreenLayout extends StatelessWidget {
                 ],
               ),
             ),
-            body: const ContactsList(),
-            floatingActionButton: FloatingActionButton(
-              onPressed: () {},
-              backgroundColor: tabColor,
-              child: const Icon(
-                Icons.insert_comment_rounded,
-                color: Colors.white,
-              ),
-            )));
+            body: const TabBarView(children: [
+              ContactsList(),
+              MobileStatusList(),
+              MobileCallsList(),
+              //   floatingActionButton: FloatingActionButton(
+              //     onPressed: () {},
+              //     backgroundColor: tabColor,
+              //     child: const Icon(
+              //       Icons.insert_comment_rounded,
+              //       color: Colors.white,
+              //     ),
+              //   )
+            ])));
   }
 }

@@ -13,33 +13,34 @@ class MobileChatScreen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: appBarColor,
-          leading: IconButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              icon: const Icon(
-                Icons.arrow_back_ios_new_rounded,
-                color: Colors.white,
-              )),
-          title: Padding(
-            padding: const EdgeInsets.only(right: 50.0),
-            child: Row(
-              children: [
-                CircleAvatar(
-                  backgroundImage: NetworkImage(
-                    info[0]["profilePic"].toString(),
-                  ),
-                  radius: 20,
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 10.0),
-                  child: Text(
-                    info[0]["name"].toString(),
-                    style: const TextStyle(fontSize: 18),
-                  ),
-                ),
-              ],
+          leading: GestureDetector(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: const Icon(
+              Icons.arrow_back_rounded,
+              color: Colors.white,
             ),
+          ),
+          centerTitle: false,
+          leadingWidth: 15,
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              CircleAvatar(
+                backgroundImage: NetworkImage(
+                  info[0]["profilePic"].toString(),
+                ),
+                radius: 20,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 10.0),
+                child: Text(
+                  info[0]["name"].toString(),
+                  style: const TextStyle(fontSize: 18),
+                ),
+              ),
+            ],
           ),
           actions: [
             IconButton(
