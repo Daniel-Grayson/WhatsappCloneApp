@@ -12,54 +12,70 @@ class MobileScreenLayout extends StatelessWidget {
     return DefaultTabController(
         length: 3,
         child: Scaffold(
-            appBar: AppBar(
-              backgroundColor: appBarColor,
-              title: const Text(
-                'Whatsapp',
-                style: TextStyle(fontSize: 20, color: Colors.grey),
-              ),
-              actions: [
-                IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Icons.search_rounded, color: Colors.grey)),
-                IconButton(
-                    onPressed: () {},
-                    icon:
-                        const Icon(Icons.more_vert_rounded, color: Colors.grey))
-              ],
-              bottom: const TabBar(
-                // onTap: () {},
-                indicatorColor: tabColor,
-                indicatorWeight: 4,
-                labelColor: tabColor,
-                unselectedLabelColor: Colors.grey,
-                labelStyle: TextStyle(fontWeight: FontWeight.bold),
-
-                tabs: [
-                  Tab(
-                    text: ("CHATS"),
-                  ),
-                  Tab(
-                    text: ("STATUS"),
-                  ),
-                  Tab(
-                    text: ("CALLS"),
-                  ),
-                ],
-              ),
+          appBar: AppBar(
+            backgroundColor: appBarColor,
+            title: const Text(
+              'Whatsapp',
+              style: TextStyle(fontSize: 20, color: Colors.grey),
             ),
-            body: const TabBarView(children: [
-              ContactsList(),
-              MobileStatusList(),
-              MobileCallsList(),
-              //   floatingActionButton: FloatingActionButton(
-              //     onPressed: () {},
-              //     backgroundColor: tabColor,
-              //     child: const Icon(
-              //       Icons.insert_comment_rounded,
-              //       color: Colors.white,
-              //     ),
-              //   )
-            ])));
+            actions: [
+              IconButton(
+                  onPressed: () {},
+                  icon: const Icon(Icons.search_rounded, color: Colors.grey)),
+              PopupMenuButton(itemBuilder: (BuildContext context) {
+                return [
+                  const PopupMenuItem(
+                    child: Text("New Group"),
+                  ),
+                  const PopupMenuItem(
+                    child: Text("New Broadcast"),
+                  ),
+                  const PopupMenuItem(
+                    child: Text("Linked Devices"),
+                  ),
+                  const PopupMenuItem(
+                    child: Text("Starred Messages"),
+                  ),
+                  const PopupMenuItem(
+                    child: Text("Settings"),
+                  ),
+                ];
+              })
+            ],
+            bottom: const TabBar(
+              // onTap: () {},
+              indicatorColor: tabColor,
+              indicatorWeight: 4,
+              labelColor: tabColor,
+              unselectedLabelColor: Colors.grey,
+              labelStyle: TextStyle(fontWeight: FontWeight.bold),
+
+              tabs: [
+                Tab(
+                  text: ("CHATS"),
+                ),
+                Tab(
+                  text: ("STATUS"),
+                ),
+                Tab(
+                  text: ("CALLS"),
+                ),
+              ],
+            ),
+          ),
+          body: const TabBarView(children: [
+            ContactsList(),
+            MobileStatusList(),
+            MobileCallsList(),
+          ]),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {},
+            backgroundColor: tabColor,
+            child: const Icon(
+              Icons.insert_comment_rounded,
+              color: Colors.white,
+            ),
+          ),
+        ));
   }
 }

@@ -38,11 +38,11 @@ class MessageInputBoxMobile extends StatelessWidget {
                     ),
                   ),
                   prefixIcon: Padding(
-                    padding: const EdgeInsetsDirectional.only(start: 12.0),
-                    child: IconButton(
-                      iconSize: 22,
-                      onPressed: () {},
-                      icon: const Icon(
+                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(30),
+                      onTap: () {},
+                      child: const Icon(
                         Icons.emoji_emotions_outlined,
                         color: Colors.grey,
                       ),
@@ -52,22 +52,42 @@ class MessageInputBoxMobile extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.end,
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      IconButton(
-                        iconSize: 22,
-                        onPressed: () {},
-                        icon: const Icon(
+                      InkWell(
+                        borderRadius: BorderRadius.circular(30),
+                        onTap: () {},
+                        child: const Icon(
                           Icons.attach_file_rounded,
                           color: Colors.grey,
                         ),
                       ),
-                      IconButton(
-                        iconSize: 22,
-                        onPressed: () {},
-                        icon: const Icon(
-                          Icons.camera_alt_rounded,
-                          color: Colors.grey,
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                        child: InkWell(
+                          borderRadius: BorderRadius.circular(30),
+                          onTap: () {},
+                          child: const Icon(
+                            Icons.camera_alt_rounded,
+                            color: Colors.grey,
+                          ),
                         ),
                       ),
+                      // IconButton(
+                      //   splashRadius: 10,
+                      //   iconSize: 22,
+                      //   onPressed: () {},
+                      //   icon: const Icon(
+                      //     Icons.attach_file_rounded,
+                      //     color: Colors.grey,
+                      //   ),
+                      // ),
+                      // IconButton(
+                      //   iconSize: 22,
+                      //   onPressed: () {},
+                      //   icon: const Icon(
+                      //     Icons.camera_alt_rounded,
+                      //     color: Colors.grey,
+                      //   ),
+                      // ),
                     ],
                   ),
                   hintStyle: const TextStyle(fontSize: 14),

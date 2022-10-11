@@ -13,17 +13,20 @@ class MobileChatScreen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: appBarColor,
-          leading: GestureDetector(
-            onTap: () {
-              Navigator.pop(context);
-            },
-            child: const Icon(
-              Icons.arrow_back_rounded,
-              color: Colors.white,
+          leading: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.pop(context);
+              },
+              child: const Icon(
+                Icons.arrow_back_rounded,
+                color: Colors.white,
+              ),
             ),
           ),
           centerTitle: false,
-          leadingWidth: 15,
+          leadingWidth: 25,
           title: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
@@ -34,7 +37,7 @@ class MobileChatScreen extends StatelessWidget {
                 radius: 20,
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 10.0),
+                padding: const EdgeInsets.only(left: 8.0),
                 child: Text(
                   info[0]["name"].toString(),
                   style: const TextStyle(fontSize: 18),
@@ -43,24 +46,33 @@ class MobileChatScreen extends StatelessWidget {
             ],
           ),
           actions: [
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12.0),
+              child: GestureDetector(
+                onTap: () {},
+                child: const Icon(
                   Icons.videocam_rounded,
                   color: Colors.white,
-                )),
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.phone_rounded,
-                  color: Colors.white,
-                )),
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(
+                ),
+              ),
+            ),
+            GestureDetector(
+              onTap: () {},
+              child: const Icon(
+                Icons.phone_rounded,
+                color: Colors.white,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: GestureDetector(
+                onTap: () {},
+                child: const Icon(
                   Icons.more_vert_rounded,
                   color: Colors.white,
-                ))
+                ),
+              ),
+            ),
           ],
         ),
         body: Container(

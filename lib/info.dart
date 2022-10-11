@@ -5,6 +5,7 @@ const info = [
     'time': '3:53',
     'profilePic':
         'https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg',
+    'calltime': '5 minutes ago',
   },
   {
     'name': 'Grace',
@@ -12,6 +13,7 @@ const info = [
     'time': '2:25',
     'profilePic':
         'https://upload.wikimedia.org/wikipedia/commons/4/41/Sunflower_from_Silesia2.jpg',
+    'calltime': '12 minutes ago',
   },
   {
     'name': 'Destiny Obahiagbon',
@@ -19,6 +21,7 @@ const info = [
     'time': '1:03',
     'profilePic':
         'https://cdn.pixabay.com/photo/2021/04/05/12/39/man-6153298_960_720.jpg',
+    'calltime': '20 minutes ago',
   },
   {
     'name': 'Sir',
@@ -26,6 +29,7 @@ const info = [
     'time': '12:06',
     'profilePic':
         'https://pbs.twimg.com/profile_images/1419974913260232732/Cy_CUavB.jpg',
+    'calltime': '30 minutes ago',
   },
   {
     'name': 'Ma',
@@ -33,6 +37,7 @@ const info = [
     'time': '10:00',
     'profilePic':
         'https://uploads.dailydot.com/2018/10/olli-the-polite-cat.jpg?auto=compress%2Cformat&ixlib=php-3.3.0',
+    'calltime': '1 hour ago',
   },
   {
     'name': 'Wisdom, G3',
@@ -40,6 +45,7 @@ const info = [
     'time': '9:53',
     'profilePic':
         'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
+    'calltime': '2 hours ago',
   },
   {
     'name': 'Vanessa, Sis',
@@ -47,6 +53,7 @@ const info = [
     'time': '7:25',
     'profilePic':
         'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
+    'calltime': '4 hours ago',
   },
   {
     'name': 'Graham Orji',
@@ -54,6 +61,7 @@ const info = [
     'time': '6:02',
     'profilePic':
         'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
+    'calltime': '4 hours ago',
   },
   {
     'name': 'Wilson, Tutor',
@@ -61,6 +69,7 @@ const info = [
     'time': '4:56',
     'profilePic':
         'https://images.unsplash.com/photo-1619194617062-5a61b9c6a049?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
+    'calltime': '6 hours ago',
   },
   {
     'name': 'Rachael lane',
@@ -68,6 +77,7 @@ const info = [
     'time': '1:00',
     'profilePic':
         'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
+    'calltime': '10 hours ago',
   },
 ];
 
