@@ -22,25 +22,30 @@ class MobileScreenLayout extends StatelessWidget {
               IconButton(
                   onPressed: () {},
                   icon: const Icon(Icons.search_rounded, color: Colors.grey)),
-              PopupMenuButton(itemBuilder: (BuildContext context) {
-                return [
-                  const PopupMenuItem(
-                    child: Text("New Group"),
+              PopupMenuButton(
+                  icon: const Icon(
+                    Icons.more_vert_rounded,
+                    color: Colors.grey,
                   ),
-                  const PopupMenuItem(
-                    child: Text("New Broadcast"),
-                  ),
-                  const PopupMenuItem(
-                    child: Text("Linked Devices"),
-                  ),
-                  const PopupMenuItem(
-                    child: Text("Starred Messages"),
-                  ),
-                  const PopupMenuItem(
-                    child: Text("Settings"),
-                  ),
-                ];
-              })
+                  itemBuilder: (BuildContext context) {
+                    return [
+                      const PopupMenuItem(
+                        child: Text("New Group"),
+                      ),
+                      const PopupMenuItem(
+                        child: Text("New Broadcast"),
+                      ),
+                      const PopupMenuItem(
+                        child: Text("Linked Devices"),
+                      ),
+                      const PopupMenuItem(
+                        child: Text("Starred Messages"),
+                      ),
+                      const PopupMenuItem(
+                        child: Text("Settings"),
+                      ),
+                    ];
+                  })
             ],
             bottom: const TabBar(
               // onTap: () {},

@@ -6,6 +6,7 @@ const info = [
     'profilePic':
         'https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg',
     'calltime': '5 minutes ago',
+    'statustime': '56 minutes ago',
   },
   {
     'name': 'Grace',
@@ -14,6 +15,7 @@ const info = [
     'profilePic':
         'https://upload.wikimedia.org/wikipedia/commons/4/41/Sunflower_from_Silesia2.jpg',
     'calltime': '12 minutes ago',
+    'statustime': 'Today, 14:41',
   },
   {
     'name': 'Destiny Obahiagbon',
@@ -21,7 +23,7 @@ const info = [
     'time': '1:03',
     'profilePic':
         'https://cdn.pixabay.com/photo/2021/04/05/12/39/man-6153298_960_720.jpg',
-    'calltime': '20 minutes ago',
+    'calltime': '(4) 20 minutes ago',
   },
   {
     'name': 'Sir',

@@ -13,18 +13,6 @@ class MobileChatScreen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: appBarColor,
-          leading: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8.0),
-            child: GestureDetector(
-              onTap: () {
-                Navigator.pop(context);
-              },
-              child: const Icon(
-                Icons.arrow_back_rounded,
-                color: Colors.white,
-              ),
-            ),
-          ),
           centerTitle: false,
           leadingWidth: 25,
           title: Row(
@@ -64,15 +52,29 @@ class MobileChatScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8.0),
-              child: GestureDetector(
-                onTap: () {},
-                child: const Icon(
-                  Icons.more_vert_rounded,
-                  color: Colors.white,
-                ),
-              ),
-            ),
+                padding: const EdgeInsets.symmetric(horizontal: 2.0),
+                child: PopupMenuButton(itemBuilder: (BuildContext context) {
+                  return [
+                    const PopupMenuItem(
+                      child: Text("View Contact"),
+                    ),
+                    const PopupMenuItem(
+                      child: Text("Media, Links, and docs"),
+                    ),
+                    const PopupMenuItem(
+                      child: Text("Search"),
+                    ),
+                    const PopupMenuItem(
+                      child: Text("Disappearing Messages"),
+                    ),
+                    const PopupMenuItem(
+                      child: Text("Wallpaper"),
+                    ),
+                    const PopupMenuItem(
+                      child: Text("More"),
+                    ),
+                  ];
+                })),
           ],
         ),
         body: Container(
