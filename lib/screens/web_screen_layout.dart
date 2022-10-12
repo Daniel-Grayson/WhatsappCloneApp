@@ -16,14 +16,12 @@ class WebScreenLayout extends StatelessWidget {
         body: Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Expanded(
-          child: SingleChildScrollView(
-            child: Column(children: const [
-              WebProfileBar(),
-              WebSearchBar(),
-              ContactsList()
-            ]),
-          ),
+        SingleChildScrollView(
+          child: Column(children: const [
+            WebProfileBar(),
+            WebSearchBar(),
+            ContactsList()
+          ]),
         ),
         // web screen
         Container(

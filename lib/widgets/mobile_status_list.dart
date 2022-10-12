@@ -70,19 +70,33 @@ class MobileStatusList extends StatelessWidget {
                 )
               ]),
             ),
-            SizedBox(
-                width: MediaQuery.of(context).size.width * 0.999,
-                child: const Padding(
-                  padding: EdgeInsets.only(left: 10.0),
-                  child: Text(
-                    "Recent Updates",
-                    style: TextStyle(color: Colors.grey),
-                  ),
-                )),
+            Padding(
+              padding: const EdgeInsets.only(top: 8.0),
+              child: SizedBox(
+                  width: MediaQuery.of(context).size.width * 0.999,
+                  child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: const [
+                        Padding(
+                          padding: EdgeInsets.only(left: 20.0),
+                          child: Text(
+                            "Recent Updates",
+                            style: TextStyle(color: Colors.grey),
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(right: 20.0),
+                          child: Icon(
+                            Icons.keyboard_arrow_up_rounded,
+                            color: tabColor,
+                          ),
+                        )
+                      ])),
+            ),
           ],
         ),
         Padding(
-          padding: const EdgeInsets.only(top: 100.0),
+          padding: const EdgeInsets.only(top: 120.0),
           child: ListView.builder(
               itemCount: 2,
               itemBuilder: (context, index) {

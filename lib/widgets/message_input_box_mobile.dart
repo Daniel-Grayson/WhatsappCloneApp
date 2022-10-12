@@ -71,23 +71,6 @@ class MessageInputBoxMobile extends StatelessWidget {
                           ),
                         ),
                       ),
-                      // IconButton(
-                      //   splashRadius: 10,
-                      //   iconSize: 22,
-                      //   onPressed: () {},
-                      //   icon: const Icon(
-                      //     Icons.attach_file_rounded,
-                      //     color: Colors.grey,
-                      //   ),
-                      // ),
-                      // IconButton(
-                      //   iconSize: 22,
-                      //   onPressed: () {},
-                      //   icon: const Icon(
-                      //     Icons.camera_alt_rounded,
-                      //     color: Colors.grey,
-                      //   ),
-                      // ),
                     ],
                   ),
                   hintStyle: const TextStyle(fontSize: 14),
