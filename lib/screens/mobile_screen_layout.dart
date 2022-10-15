@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone_app/widgets/mobile_settings_tab.dart';
 import '../colors.dart';
 import '../widgets/contact_list.dart';
 import '../widgets/mobile_calls_list.dart';
@@ -41,8 +42,18 @@ class MobileScreenLayout extends StatelessWidget {
                       const PopupMenuItem(
                         child: Text("Starred Messages"),
                       ),
-                      const PopupMenuItem(
-                        child: Text("Settings"),
+                      PopupMenuItem(
+                        onTap: () {
+                          WidgetsBinding.instance!.addPostFrameCallback((_) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const MobileSettingsTab()),
+                            );
+                          });
+                        },
+                        child: const Text("Settings"),
                       ),
                     ];
                   })

@@ -85,7 +85,7 @@ class MobileStatusList extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.only(right: 20.0),
+                          padding: EdgeInsets.symmetric(horizontal: 20.0),
                           child: Icon(
                             Icons.keyboard_arrow_up_rounded,
                             color: tabColor,
