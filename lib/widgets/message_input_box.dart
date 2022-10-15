@@ -33,33 +33,29 @@ class MessageInputBox extends StatelessWidget {
               color: Colors.grey,
             ),
           ),
-          Column(
-            children: [
-              Expanded(
-                  child: Padding(
-                padding: const EdgeInsets.only(
-                  left: 10,
-                  right: 15,
-                ),
-                child: TextField(
-                  decoration: InputDecoration(
-                      hoverColor: Colors.grey[800],
-                      filled: true,
-                      fillColor: searchBarColor,
-                      hintStyle: const TextStyle(fontSize: 14),
-                      hintText: "Type a message",
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        borderSide: const BorderSide(
-                          width: 0,
-                          style: BorderStyle.none,
-                        ),
-                      ),
-                      contentPadding: const EdgeInsets.only(left: 20)),
-                ),
-              )),
-            ],
-          ),
+          Expanded(
+              child: Padding(
+            padding: const EdgeInsets.only(
+              left: 10,
+              right: 15,
+            ),
+            child: TextField(
+              decoration: InputDecoration(
+                  hoverColor: Colors.grey[800],
+                  filled: true,
+                  fillColor: searchBarColor,
+                  hintStyle: const TextStyle(fontSize: 14),
+                  hintText: "Type a message",
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20),
+                    borderSide: const BorderSide(
+                      width: 0,
+                      style: BorderStyle.none,
+                    ),
+                  ),
+                  contentPadding: const EdgeInsets.only(left: 20)),
+            ),
+          )),
           IconButton(
             onPressed: () {},
             icon: const Icon(

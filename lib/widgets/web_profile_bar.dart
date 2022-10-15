@@ -38,7 +38,9 @@ class WebProfileBar extends StatelessWidget {
                     )),
                 IconButton(
                   onPressed: () {},
-                  icon: const Icon(Icons.more_vert_rounded),
+                  icon: const Icon(
+                    Icons.more_vert_rounded,
+                  ),
                   color: Colors.grey,
                 ),
               ],

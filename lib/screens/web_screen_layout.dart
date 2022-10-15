@@ -14,14 +14,16 @@ class WebScreenLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        SingleChildScrollView(
-          child: Column(children: const [
-            WebProfileBar(),
-            WebSearchBar(),
-            // ContactsList()
-          ]),
+        Expanded(
+          child: SingleChildScrollView(
+            child: Column(children: const [
+              WebProfileBar(),
+              WebSearchBar(),
+              ContactsList()
+            ]),
+          ),
         ),
         // web screen
         Container(
@@ -32,11 +34,11 @@ class WebScreenLayout extends StatelessWidget {
                   fit: BoxFit.cover)),
           child: Column(
             children: const [
-              // ChatAppBar(),
+              WebChatAppBar(),
               Expanded(
                 child: ChatList(),
               ),
-              // MessageInputBox(),
+              MessageInputBox(),
             ],
           ),
         ),
