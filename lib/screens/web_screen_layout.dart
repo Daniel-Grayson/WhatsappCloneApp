@@ -20,25 +20,26 @@ class WebScreenLayout extends StatelessWidget {
           child: Column(children: const [
             WebProfileBar(),
             WebSearchBar(),
-            ContactsList()
+            // ContactsList()
           ]),
         ),
         // web screen
         Container(
-            width: MediaQuery.of(context).size.width * 0.75,
-            decoration: const BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage("assets/backgroundImage.png"),
-                    fit: BoxFit.cover)),
-            child: Column(
-              children: const [
-                ChatAppBar(),
-                Expanded(
-                  child: ChatList(),
-                ),
-                MessageInputBox(),
-              ],
-            )),
+          width: MediaQuery.of(context).size.width * 0.75,
+          decoration: const BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("assets/backgroundImage.png"),
+                  fit: BoxFit.cover)),
+          child: Column(
+            children: const [
+              // ChatAppBar(),
+              Expanded(
+                child: ChatList(),
+              ),
+              // MessageInputBox(),
+            ],
+          ),
+        ),
       ],
     ));
   }
