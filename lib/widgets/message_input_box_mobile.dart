@@ -29,7 +29,7 @@ class MessageInputBoxMobile extends StatelessWidget {
               decoration: InputDecoration(
                   hoverColor: Colors.grey[800],
                   filled: true,
-                  fillColor: searchBarColor,
+                  fillColor: senderMessageColor,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20),
                     borderSide: const BorderSide(

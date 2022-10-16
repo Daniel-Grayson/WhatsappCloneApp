@@ -8,49 +8,59 @@ class MobileCallsList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-        itemCount: 3,
-        itemBuilder: (context, index) {
-          return Column(
-            children: [
-              ListTile(
-                title: Text(
-                  info[index]["name"].toString(),
-                  style: const TextStyle(fontSize: 18),
-                ),
-                subtitle: Padding(
-                  padding: const EdgeInsets.only(top: 3.0),
-                  child: Row(
-                    children: [
-                      const Icon(
-                        Icons.call_made_rounded,
-                        size: 17,
-                        color: tabColor,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 4.0),
-                        child: Text(info[index]["calltime"].toString(),
-                            style: const TextStyle(fontSize: 15)),
-                      ),
-                    ],
+    return Scaffold(
+      body: ListView.builder(
+          itemCount: 3,
+          itemBuilder: (context, index) {
+            return Column(
+              children: [
+                ListTile(
+                  title: Text(
+                    info[index]["name"].toString(),
+                    style: const TextStyle(fontSize: 18),
                   ),
-                ),
-                leading: CircleAvatar(
-                  backgroundImage: NetworkImage(
-                    info[index]["profilePic"].toString(),
+                  subtitle: Padding(
+                    padding: const EdgeInsets.only(top: 3.0),
+                    child: Row(
+                      children: [
+                        const Icon(
+                          Icons.call_made_rounded,
+                          size: 17,
+                          color: tabColor,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 4.0),
+                          child: Text(info[index]["calltime"].toString(),
+                              style: const TextStyle(fontSize: 15)),
+                        ),
+                      ],
+                    ),
                   ),
-                  radius: 30,
-                ),
-                trailing: IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.call_rounded,
-                    color: tabColor,
+                  leading: CircleAvatar(
+                    backgroundImage: NetworkImage(
+                      info[index]["profilePic"].toString(),
+                    ),
+                    radius: 30,
                   ),
-                ),
-              )
-            ],
-          );
-        });
+                  trailing: IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.call_rounded,
+                      color: tabColor,
+                    ),
+                  ),
+                )
+              ],
+            );
+          }),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: tabColor,
+        child: const Icon(
+          Icons.add_call,
+          color: Colors.white,
+        ),
+      ),
+    );
   }
 }

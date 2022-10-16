@@ -3,7 +3,7 @@ import 'package:whatsapp_clone_app/widgets/mobile_linked_devices.dart';
 import 'package:whatsapp_clone_app/widgets/mobile_settings_tab.dart';
 import 'package:whatsapp_clone_app/widgets/mobile_starred_messages.dart';
 import '../colors.dart';
-import '../widgets/contact_list.dart';
+import '../widgets/mobile_contacts_list.dart';
 import '../widgets/mobile_calls_list.dart';
 import '../widgets/mobile_status_list.dart';
 
@@ -102,18 +102,10 @@ class MobileScreenLayout extends StatelessWidget {
             ),
           ),
           body: const TabBarView(children: [
-            ContactsList(),
+            MobileContactsList(),
             MobileStatusList(),
             MobileCallsList(),
           ]),
-          floatingActionButton: FloatingActionButton(
-            onPressed: () {},
-            backgroundColor: tabColor,
-            child: const Icon(
-              Icons.insert_comment_rounded,
-              color: Colors.white,
-            ),
-          ),
         ));
   }
 }

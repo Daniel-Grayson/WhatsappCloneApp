@@ -24,7 +24,7 @@ class MobileLinkedDevices extends StatelessWidget {
           child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
             Container(
               height: MediaQuery.of(context).size.height * 0.35,
-              width: MediaQuery.of(context).size.width * 0.50,
+              width: MediaQuery.of(context).size.width * 0.70,
               decoration: const BoxDecoration(
                   color: Colors.transparent,
                   image: DecorationImage(

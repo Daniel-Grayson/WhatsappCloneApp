@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp_clone_app/screens/mobile_chat_screen.dart';
 import '../info.dart';
 
-class ContactsList extends StatelessWidget {
-  const ContactsList({Key? key}) : super(key: key);
+class WebContactsList extends StatelessWidget {
+  const WebContactsList({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
