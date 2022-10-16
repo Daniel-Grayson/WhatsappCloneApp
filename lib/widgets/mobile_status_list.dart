@@ -84,13 +84,13 @@ class MobileStatusList extends StatelessWidget {
                             style: TextStyle(color: Colors.grey),
                           ),
                         ),
-                        Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 20.0),
-                          child: Icon(
-                            Icons.keyboard_arrow_up_rounded,
-                            color: tabColor,
-                          ),
-                        )
+                        // Padding(
+                        //   padding: EdgeInsets.symmetric(horizontal: 20.0),
+                        //   child: Icon(
+                        //     Icons.keyboard_arrow_up_rounded,
+                        //     color: tabColor,
+                        //   ),
+                        // )
                       ])),
             ),
           ],

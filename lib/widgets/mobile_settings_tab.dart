@@ -79,21 +79,50 @@ class MobileSettingsTab extends StatelessWidget {
             const Divider(
               color: appBarColor,
             ),
-            // ListView(
-            //   padding: const EdgeInsets.all(8.0),
-            //   children: [
-            //     ListTile(
-            //       title: Text("Account"),
-            //       subtitle: Text("Privacy, Security, change number"),
-            //       leading: Icon(Icons.key_rounded),
-            //     ),
-            //     ListTile(
-            //       title: Text("Chats"),
-            //       subtitle: Text("Privacy, Security, change number"),
-            //       leading: Icon(Icons.key_rounded),
-            //     ),
-            //   ],
-            // )
+            ListView(
+              shrinkWrap: true,
+              padding: const EdgeInsets.all(8.0),
+              children: const [
+                ListTile(
+                  title: Text("Account"),
+                  subtitle: Text("Privacy, security, change number"),
+                  leading: Icon(Icons.person_rounded),
+                ),
+                ListTile(
+                  title: Text("Chats"),
+                  subtitle: Text("Themes, wallpapers, chat history"),
+                  leading: Icon(Icons.chat_rounded),
+                ),
+                ListTile(
+                  title: Text("Notifications"),
+                  subtitle: Text("Message, group & call tones"),
+                  leading: Icon(Icons.notifications),
+                ),
+                ListTile(
+                  title: Text("Storage and data"),
+                  subtitle: Text("Network usage, auto download"),
+                  leading: Icon(Icons.storage_rounded),
+                ),
+                ListTile(
+                  title: Text("App Language"),
+                  subtitle: Text("English (phone's language)"),
+                  leading: Icon(Icons.language_rounded),
+                ),
+                ListTile(
+                  title: Text("Help"),
+                  subtitle: Text("Help center, contact us, privacy policy"),
+                  leading: Icon(Icons.help_rounded),
+                ),
+                ListTile(
+                  title: Text("Invite a friend"),
+                  leading: Icon(Icons.people_rounded),
+                ),
+              ],
+            ),
+            const Text(
+              "from \n Meta",
+              textAlign: TextAlign.center,
+            )
           ],
         ));
   }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone_app/widgets/mobile_linked_devices.dart';
 import 'package:whatsapp_clone_app/widgets/mobile_settings_tab.dart';
+import 'package:whatsapp_clone_app/widgets/mobile_starred_messages.dart';
 import '../colors.dart';
 import '../widgets/contact_list.dart';
 import '../widgets/mobile_calls_list.dart';
@@ -36,11 +38,31 @@ class MobileScreenLayout extends StatelessWidget {
                       const PopupMenuItem(
                         child: Text("New Broadcast"),
                       ),
-                      const PopupMenuItem(
-                        child: Text("Linked Devices"),
+                      PopupMenuItem(
+                        onTap: () {
+                          WidgetsBinding.instance!.addPostFrameCallback((_) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const MobileLinkedDevices()),
+                            );
+                          });
+                        },
+                        child: const Text("Linked Devices"),
                       ),
-                      const PopupMenuItem(
-                        child: Text("Starred Messages"),
+                      PopupMenuItem(
+                        onTap: () {
+                          WidgetsBinding.instance!.addPostFrameCallback((_) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const MobileStarredMessages()),
+                            );
+                          });
+                        },
+                        child: const Text("Starred Messages"),
                       ),
                       PopupMenuItem(
                         onTap: () {
