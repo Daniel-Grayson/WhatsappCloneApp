@@ -40,7 +40,7 @@ class MobileScreenLayout extends StatelessWidget {
                       ),
                       PopupMenuItem(
                         onTap: () {
-                          WidgetsBinding.instance!.addPostFrameCallback((_) {
+                          WidgetsBinding.instance.addPostFrameCallback((_) {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
@@ -53,7 +53,7 @@ class MobileScreenLayout extends StatelessWidget {
                       ),
                       PopupMenuItem(
                         onTap: () {
-                          WidgetsBinding.instance!.addPostFrameCallback((_) {
+                          WidgetsBinding.instance.addPostFrameCallback((_) {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
@@ -66,7 +66,7 @@ class MobileScreenLayout extends StatelessWidget {
                       ),
                       PopupMenuItem(
                         onTap: () {
-                          WidgetsBinding.instance!.addPostFrameCallback((_) {
+                          WidgetsBinding.instance.addPostFrameCallback((_) {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
